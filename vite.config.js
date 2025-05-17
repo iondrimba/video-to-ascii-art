@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-    base: '/video-to-pixel-art/'
+    base: '/video-to-ascii-art/'
 })
