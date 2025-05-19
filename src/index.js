@@ -71,12 +71,12 @@ export function App() {
     btnShowVideo.on("click", () => {
       this.video.classList.toggle("hidden");
     });
-  }
+  };
 
   this.setup = () => {
     this.offscreenCtx = this.offscreen.getContext("2d", { willReadFrequently: true });
     this.ctx = this.canvas.getContext("2d", { willReadFrequently: true });
-  }
+  };
 
   this.updateCanvas = () => {
     this.canvas.width = Math.floor(this.video.videoWidth);
@@ -94,7 +94,7 @@ export function App() {
     );
 
     this.renderPixels();
-  }
+  };
 
   this.renderPixels = () => {
     const imageData = this.offscreenCtx.getImageData(
@@ -150,7 +150,7 @@ export function App() {
         this.ctx.fillText(char, posX + cellWidth * 0.5, posY + cellWidth);
       }
     }
-  }
+  };
 }
 
 document.addEventListener("DOMContentLoaded", () => {
